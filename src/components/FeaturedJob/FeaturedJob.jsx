@@ -1,5 +1,6 @@
 
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid';
+import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({ job }) => {
     console.log(job);
@@ -19,7 +20,7 @@ const FeaturedJob = ({ job }) => {
                 <p className='text-xl flex items-center gap-1 font-semibold text-[#757575] '><CurrencyDollarIcon className="h-5 w-5 text-[#757575]" />
                     Salary : {salary}</p>
             </div>
-            <button className='my-btn mb-4'>Show All</button>
+            <button className='my-btn mb-4'><Link >View Details</Link> </button>
         </div>
     );
 };

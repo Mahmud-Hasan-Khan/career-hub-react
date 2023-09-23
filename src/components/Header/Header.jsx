@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className='flex flex-col justify-around items-center mx-auto py-4 my-bg-color sm:flex-row '>
+        <div className='flex flex-col justify-around items-center mx-auto py-4 my-bg-color sm:flex-row'>
             <div>
                 <Link to='/'><h1 className='text-4xl font-extrabold my-gradient-color'>JobSearcher</h1></Link>
             </div>
