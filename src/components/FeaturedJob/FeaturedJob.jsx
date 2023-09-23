@@ -3,8 +3,8 @@ import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({ job }) => {
-    console.log(job);
-    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job;
+    // console.log(job);
+    const { id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job;
     return (
         <div className='rounded-lg border border-[#E8E8E8] justify-around pl-10'>
             <img src={logo} alt="" className='object-cover pt-10' />
@@ -20,8 +20,8 @@ const FeaturedJob = ({ job }) => {
                 <p className='text-xl flex items-center gap-1 font-semibold text-[#757575] '><CurrencyDollarIcon className="h-5 w-5 text-[#757575]" />
                     Salary : {salary}</p>
             </div>
-            <button className='my-btn mb-4'><Link >View Details</Link> </button>
-        </div>
+            <button className='my-btn mb-4'><Link to={`/jobDetails/${id}`} >View Details</Link> </button>
+        </div >
     );
 };
 
