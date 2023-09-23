@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-btn {
+    @apply text-xl font-bold text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-4 py-4 rounded-lg
+}
+
+.my-bg-color {
+    @apply bg-gradient-to-r from-[#9873FF0D] to-[#7E90FE0D]
+}
+
+.my-gradient-color {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#7E90FE] to-[#9873FF] inline-block
+}
+
+.my-jobCategory-img-bg-color {
+    @apply bg-gradient-to-r from-[#9873FF1A] to-[#7E90FE1A] rounded-lg items-center
+}
+
+.my-h2 {
+    @apply text-5xl font-extrabold text-[#1A1919] text-center mt-16
+}
+
+.my-p-style {
+    @apply text-base font-semibold text-[#757575] text-center my-4
+}
+
+.my-blog-p-style {
+    @apply text-base font-semibold
+}
